@@ -33,6 +33,7 @@ export const StoriesListItem: FC<StoriesListItemProps> = ({
     <Card sx={styles.card}>
       <Box sx={styles.imageWrapper}>
         <Box
+          loading="lazy"
           sx={styles.image}
           component="img"
           alt={image.alt}

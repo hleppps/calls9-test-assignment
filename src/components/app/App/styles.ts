@@ -11,6 +11,7 @@ export const styles: SxStyles = {
   title: {
     fontSize: '24px',
     color: theme.palette.custom.grey,
+    mb: 10,
   },
   bottomSectionWrapper: {
     bgcolor: theme.palette.common.white,

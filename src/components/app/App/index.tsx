@@ -1,6 +1,6 @@
 import { Box, Container, Link, Typography } from '@mui/material';
 import windowIcon from 'assets/icons/window.png';
-import { StoriesListItem } from 'components/unsorted/StoriesListItem';
+import { StoriesList } from 'components/unsorted/StoriesList';
 import { FC } from 'react';
 import { dummyStories } from 'utils/dummyStories';
 
@@ -14,7 +14,7 @@ export const App: FC = () => {
         <Typography variant="h2" sx={styles.title}>
           News
         </Typography>
-        <StoriesListItem {...dummyStories[0]} />
+        <StoriesList stories={dummyStories} />
       </Container>
       <Box sx={styles.bottomSectionWrapper}>
         <Container maxWidth="laptop" sx={styles.bottomSection}>

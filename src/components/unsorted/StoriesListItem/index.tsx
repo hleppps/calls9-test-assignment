@@ -1,5 +1,6 @@
 import { Box, Card, Chip, Typography } from '@mui/material';
 import playIcon from 'assets/icons/play.png';
+import notFoundImage from 'assets/images/not-found-image.png';
 import { FC } from 'react';
 import { ContentType } from 'utils/constants';
 
@@ -36,6 +37,10 @@ export const StoriesListItem: FC<StoriesListItemProps> = ({
           component="img"
           alt={image.alt}
           src={image.src}
+          onError={({ currentTarget }) => {
+            currentTarget.onerror = null;
+            currentTarget.src = notFoundImage;
+          }}
         />
         {getVideoIcon(contentType)}
       </Box>

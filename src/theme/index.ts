@@ -62,6 +62,7 @@ export const theme = createTheme(
             borderRadius: 0,
             height: '24px',
             lineHeight: '16px',
+            textTransform: 'uppercase',
           },
         },
       },

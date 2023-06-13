@@ -3,8 +3,7 @@ import { SxStyles } from 'types/styles';
 
 export const styles: SxStyles = {
   card: {
-    maxWidth: '300px',
-    width: '100%',
+    width: '300px',
     height: '420px',
     display: 'flex',
     flexDirection: 'column',

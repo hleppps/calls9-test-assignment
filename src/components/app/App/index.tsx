@@ -6,7 +6,6 @@ import { StoriesList } from 'components/unsorted/StoriesList';
 import { FC, useEffect, useMemo, useState } from 'react';
 import { Story } from 'types/global';
 import { getTopStories } from 'utils/api/storyService';
-import { dummyStories } from 'utils/dummyStories';
 
 import { Layout } from '../Layout';
 import { styles } from './styles';
@@ -20,10 +19,11 @@ export const App: FC = () => {
     [stories, loading],
   );
 
+  const commentForm = useMemo(() => {
+    return stories.length !== 0 ? <CommentForm stories={stories} /> : null;
+  }, [stories]);
+
   useEffect(() => {
-    // postComment().then((data) => {
-    //   console.log(data);
-    // });
     getTopStories().then((fetchedStories) => {
       setStories(fetchedStories);
       setLoading(false);
@@ -52,9 +52,9 @@ export const App: FC = () => {
           </Link>
         </Container>
       </Box>
-        <Container maxWidth="laptop" sx={styles.topSection}>
-          {stories.length !== 0 && <CommentForm stories={stories} />}
-        </Container>
+      <Container maxWidth="laptop" sx={styles.topSection}>
+        {commentForm}
+      </Container>
     </Layout>
   );
 };

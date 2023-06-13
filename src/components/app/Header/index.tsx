@@ -2,14 +2,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import {
   AppBar,
   Box,
-  Button,
   Container,
   IconButton,
   List,
   ListItem,
   ListItemButton,
   ListItemText,
-  Toolbar,
+  Toolbar
 } from '@mui/material';
 import { Navigation } from 'components/unsorted/Navigation';
 import { NavigationDrawer } from 'components/unsorted/NavigationDrawer';
@@ -18,7 +17,6 @@ import { FC, useState } from 'react';
 import { AppLogo } from '../AppLogo';
 import { styles } from './styles';
 
-const drawerWidth = 240;
 const navigationItems = ['About us', 'What we do', 'Our stuff', 'Contact us'];
 
 export const Header: FC = () => {

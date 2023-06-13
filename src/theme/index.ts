@@ -16,6 +16,8 @@ declare module '@mui/material/styles' {
 
 interface CustomColors {
   grey: string;
+  lightGrey: string;
+  darkGrey: string;
 }
 
 declare module '@mui/material/styles/createPalette' {
@@ -38,7 +40,7 @@ export const basicTheme = createTheme({
     },
   },
   palette: {
-    custom: { grey: '#ACACAC' },
+    custom: { grey: '#ACACAC', lightGrey: '##f2f2f2', darkGrey: '#3c3f43' },
   },
 });
 

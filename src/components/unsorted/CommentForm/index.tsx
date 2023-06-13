@@ -73,7 +73,6 @@ export const CommentForm: FC<CommentProps> = ({ stories }) => {
         <Box sx={styles.formRow}>
           <TextField
             label="Name"
-            id="name"
             name="name"
             value={formik.values.name}
             onChange={formik.handleChange}
@@ -83,7 +82,6 @@ export const CommentForm: FC<CommentProps> = ({ stories }) => {
           />
           <Select
             label="Story"
-            id="storyId"
             name="storyId"
             value={formik.values.storyId}
             onChange={formik.handleChange}
@@ -94,7 +92,6 @@ export const CommentForm: FC<CommentProps> = ({ stories }) => {
         </Box>
         <TextField
           label="Comment text"
-          id="text"
           name="text"
           value={formik.values.text}
           onChange={formik.handleChange}

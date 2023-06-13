@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/calls9-test-assignment/static/js/main.3483c318.js",
+    "main.js": "/calls9-test-assignment/static/js/main.b59bc95f.js",
     "static/media/story-image-4.jpeg": "/calls9-test-assignment/static/media/story-image-4.152a6541f7d10289c858.jpeg",
     "static/media/story-image-3.jpeg": "/calls9-test-assignment/static/media/story-image-3.d1ec96a4483007323c59.jpeg",
     "static/media/story-image-2.jpeg": "/calls9-test-assignment/static/media/story-image-2.4001c5b3aa8e0eb01cf1.jpeg",
     "static/media/story-image-1.jpeg": "/calls9-test-assignment/static/media/story-image-1.b0f9d248cb37a708b419.jpeg",
     "static/media/not-found-image.png": "/calls9-test-assignment/static/media/not-found-image.70ac66a44a9b3620e193.png",
     "index.html": "/calls9-test-assignment/index.html",
-    "main.3483c318.js.map": "/calls9-test-assignment/static/js/main.3483c318.js.map"
+    "main.b59bc95f.js.map": "/calls9-test-assignment/static/js/main.b59bc95f.js.map"
   },
   "entrypoints": [
-    "static/js/main.3483c318.js"
+    "static/js/main.b59bc95f.js"
   ]
 }

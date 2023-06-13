@@ -1,4 +1,4 @@
-import { ContentType } from 'utils/constants';
+import { ActionType, ContentType } from 'utils/constants';
 
 export type Story = {
   id: number;
@@ -10,11 +10,11 @@ export type Story = {
 };
 
 export type Comment = {
-  userName: string;
-  storyId: string;
+  by: string;
+  parent: number;
   text: string;
   time: string;
-  type: 'comment';
+  type: ActionType;
 };
 
 export type Image = {

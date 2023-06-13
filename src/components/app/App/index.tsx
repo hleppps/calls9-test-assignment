@@ -1,19 +1,18 @@
 import { Box, Container, Link, Typography } from '@mui/material';
 import windowIcon from 'assets/icons/window.png';
 import { Loader } from 'components/ui/Loader';
+import { CommentForm } from 'components/unsorted/CommentForm';
 import { StoriesList } from 'components/unsorted/StoriesList';
 import { FC, useEffect, useMemo, useState } from 'react';
 import { Story } from 'types/global';
-import {
-  getTopStories
-} from 'utils/api/storyService';
+import { getTopStories } from 'utils/api/storyService';
 import { dummyStories } from 'utils/dummyStories';
 
 import { Layout } from '../Layout';
 import { styles } from './styles';
 
 export const App: FC = () => {
-  const [stories, setStories] = useState<Story[]>(dummyStories);
+  const [stories, setStories] = useState<Story[]>([]);
   const [loading, setLoading] = useState(true);
 
   const storiesList = useMemo(
@@ -53,6 +52,9 @@ export const App: FC = () => {
           </Link>
         </Container>
       </Box>
+        <Container maxWidth="laptop" sx={styles.topSection}>
+          {stories.length !== 0 && <CommentForm stories={stories} />}
+        </Container>
     </Layout>
   );
 };

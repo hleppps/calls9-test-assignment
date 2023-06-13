@@ -13,4 +13,8 @@ export enum Endpoint {
   ITEM = '/item',
 }
 
-export const TOTAL_STORIES = 9
+export enum ActionType {
+  COMMENT = 'comment',
+}
+
+export const TOTAL_STORIES = 9;

@@ -43,8 +43,3 @@ export const getTopStories = async (): Promise<Story[]> => {
 
   return topStories;
 };
-
-// export const postComment = (comment: Comment) => {
-export const postComment = () => {
-  return Promise.resolve();
-};

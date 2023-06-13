@@ -10,4 +10,12 @@ export const styles: SxStyles = {
     bgcolor: theme.palette.custom.darkGrey,
     color: theme.palette.common.white,
   },
+  button: {
+    textTransform: 'initial',
+    color: theme.palette.common.white,
+    '&:hover': {
+      textDecoration: 'underline',
+      backgroundColor: 'transparent',
+    },
+  },
 };

@@ -46,8 +46,33 @@ export const basicTheme = createTheme({
     secondary: {
       main: '#3c3f43',
     },
-    custom: { grey: '#ACACAC', lightGrey: '##f2f2f2', darkGrey: '#3c3f43' },
+    custom: { grey: '#b1b2b6', lightGrey: '#f2f2f2', darkGrey: '#3c3f43' },
   },
+  spacing: 4,
 });
 
-export const theme = createTheme(basicTheme);
+export const theme = createTheme(
+  {
+    components: {
+      MuiChip: {
+        styleOverrides: {
+          root: {
+            backgroundColor: basicTheme.palette.custom.grey,
+            color: basicTheme.palette.common.white,
+            borderRadius: 0,
+          },
+        },
+      },
+      MuiLink: {
+        styleOverrides: {
+          root: {
+            '&:hover': {
+              cursor: 'pointer',
+            },
+          },
+        },
+      },
+    },
+  },
+  basicTheme,
+);

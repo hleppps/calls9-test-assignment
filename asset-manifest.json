@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/calls9-test-assignment/static/js/main.a1bdd33f.js",
-    "static/media/story-image-3.jpeg": "/calls9-test-assignment/static/media/story-image-3.75c0c8425006e0066b3e.jpeg",
-    "static/media/story-image-2.jpeg": "/calls9-test-assignment/static/media/story-image-2.3e15b2c32329304d818f.jpeg",
-    "static/media/story-image-4.jpeg": "/calls9-test-assignment/static/media/story-image-4.0f2a4bad73fcd64795d3.jpeg",
-    "static/media/story-image-1.jpeg": "/calls9-test-assignment/static/media/story-image-1.05681976cd56c6751c34.jpeg",
+    "main.js": "/calls9-test-assignment/static/js/main.4fef5dfc.js",
+    "static/media/story-image-4.jpeg": "/calls9-test-assignment/static/media/story-image-4.152a6541f7d10289c858.jpeg",
+    "static/media/story-image-3.jpeg": "/calls9-test-assignment/static/media/story-image-3.d1ec96a4483007323c59.jpeg",
+    "static/media/story-image-2.jpeg": "/calls9-test-assignment/static/media/story-image-2.4001c5b3aa8e0eb01cf1.jpeg",
+    "static/media/story-image-1.jpeg": "/calls9-test-assignment/static/media/story-image-1.b0f9d248cb37a708b419.jpeg",
     "static/media/not-found-image.png": "/calls9-test-assignment/static/media/not-found-image.70ac66a44a9b3620e193.png",
     "index.html": "/calls9-test-assignment/index.html",
-    "main.a1bdd33f.js.map": "/calls9-test-assignment/static/js/main.a1bdd33f.js.map"
+    "main.4fef5dfc.js.map": "/calls9-test-assignment/static/js/main.4fef5dfc.js.map"
   },
   "entrypoints": [
-    "static/js/main.a1bdd33f.js"
+    "static/js/main.4fef5dfc.js"
   ]
 }

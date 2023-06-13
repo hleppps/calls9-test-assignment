@@ -2,7 +2,7 @@ import { theme } from 'theme';
 import { SxStyles } from 'types/styles';
 
 export const styles: SxStyles = {
-  topSection: {
+  section: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',

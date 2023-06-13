@@ -20,7 +20,11 @@ export const App: FC = () => {
   );
 
   const commentForm = useMemo(() => {
-    return stories.length !== 0 ? <CommentForm stories={stories} /> : null;
+    return stories.length !== 0 ? (
+      <Container maxWidth="laptop" sx={styles.section}>
+        <CommentForm stories={stories} />
+      </Container>
+    ) : null;
   }, [stories]);
 
   useEffect(() => {
@@ -32,7 +36,7 @@ export const App: FC = () => {
 
   return (
     <Layout>
-      <Container maxWidth="laptop" sx={styles.topSection}>
+      <Container maxWidth="laptop" sx={styles.section}>
         <Typography variant="h2" sx={styles.title}>
           News
         </Typography>
@@ -52,9 +56,7 @@ export const App: FC = () => {
           </Link>
         </Container>
       </Box>
-      <Container maxWidth="laptop" sx={styles.topSection}>
-        {commentForm}
-      </Container>
+      {commentForm}
     </Layout>
   );
 };

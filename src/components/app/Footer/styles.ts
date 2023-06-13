@@ -2,12 +2,14 @@ import { theme } from 'theme';
 import { SxStyles } from 'types/styles';
 
 export const styles: SxStyles = {
+  wrapper: {
+    bgcolor: theme.palette.custom.darkGrey,
+  },
   footer: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     py: '48px',
-    bgcolor: theme.palette.custom.darkGrey,
     color: theme.palette.common.white,
   },
   button: {

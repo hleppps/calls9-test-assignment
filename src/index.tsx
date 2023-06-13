@@ -1,5 +1,5 @@
 import { CssBaseline, ThemeProvider } from '@mui/material';
-import App from 'components/app/App';
+import { App } from 'components/app/App';
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import { theme } from 'theme';

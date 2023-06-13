@@ -58,5 +58,3 @@ export const App: FC = () => {
     </Layout>
   );
 };
-
-export default App;

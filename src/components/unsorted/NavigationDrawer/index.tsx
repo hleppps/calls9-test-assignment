@@ -3,7 +3,7 @@ import { FC, ReactNode } from 'react';
 
 export interface NavigationDrawerProps {
   open: boolean;
-  children: ReactNode;
+  children?: ReactNode;
   handleClose:
     | ((event: object, reason: 'backdropClick' | 'escapeKeyDown') => void)
     | undefined;

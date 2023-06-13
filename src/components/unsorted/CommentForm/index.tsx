@@ -65,53 +65,51 @@ export const CommentForm: FC<CommentProps> = ({ stories }) => {
   );
 
   return (
-    <form onSubmit={formik.handleSubmit}>
-      <Box sx={styles.form}>
-        <Typography variant="h3" sx={styles.title}>
-          Leave your comment
-        </Typography>
-        <Box sx={styles.formRow}>
-          <TextField
-            label="Name"
-            name="name"
-            value={formik.values.name}
-            onChange={formik.handleChange}
-            error={formik.touched.name && Boolean(formik.errors.name)}
-            helperText={formik.touched.name && formik.errors.name}
-            sx={styles.nameInput}
-          />
-          <Select
-            label="Story"
-            name="storyId"
-            value={formik.values.storyId}
-            onChange={formik.handleChange}
-            error={formik.touched.storyId && Boolean(formik.errors.storyId)}
-            options={storySelectOptions}
-            sx={styles.storyInput}
-          />
-        </Box>
+    <Box component="form" onSubmit={formik.handleSubmit} sx={styles.form}>
+      <Typography variant="h3" sx={styles.title}>
+        Leave your comment
+      </Typography>
+      <Box sx={styles.formRow}>
         <TextField
-          label="Comment text"
-          name="text"
-          value={formik.values.text}
+          label="Name"
+          name="name"
+          value={formik.values.name}
           onChange={formik.handleChange}
-          error={formik.touched.text && Boolean(formik.errors.text)}
-          helperText={formik.touched.text && formik.errors.text}
-          fullWidth
-          multiline
-          sx={styles.commentTextInput}
+          error={formik.touched.name && Boolean(formik.errors.name)}
+          helperText={formik.touched.name && formik.errors.name}
+          sx={styles.nameInput}
         />
-        <Button
-          color="secondary"
-          variant="outlined"
-          fullWidth
-          type="submit"
-          sx={{ my: 1, padding: 2 }}
-          disabled={formik.isSubmitting}
-        >
-          Submit
-        </Button>
+        <Select
+          label="Story"
+          name="storyId"
+          value={formik.values.storyId}
+          onChange={formik.handleChange}
+          error={formik.touched.storyId && Boolean(formik.errors.storyId)}
+          options={storySelectOptions}
+          sx={styles.storyInput}
+        />
       </Box>
-    </form>
+      <TextField
+        label="Comment text"
+        name="text"
+        value={formik.values.text}
+        onChange={formik.handleChange}
+        error={formik.touched.text && Boolean(formik.errors.text)}
+        helperText={formik.touched.text && formik.errors.text}
+        fullWidth
+        multiline
+        sx={styles.commentTextInput}
+      />
+      <Button
+        color="secondary"
+        variant="outlined"
+        fullWidth
+        type="submit"
+        sx={{ my: 1, padding: 2 }}
+        disabled={formik.isSubmitting}
+      >
+        Submit
+      </Button>
+    </Box>
   );
 };

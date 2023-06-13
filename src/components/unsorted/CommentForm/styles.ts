@@ -6,8 +6,11 @@ export const styles: SxStyles = {
     display: 'flex',
     flexDirection: 'column',
     gap: '24px',
-    maxWidth: '100%',
+    width: '100%',
     p: 4,
+    [theme.breakpoints.up('tablet')]: {
+      width: '760px',
+    },
   },
   title: {
     textAlign: 'center',

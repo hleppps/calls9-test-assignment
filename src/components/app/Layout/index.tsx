@@ -13,9 +13,9 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <Container sx={styles.container}>
       <Header />
-      <Container maxWidth="laptop" component="main" sx={styles.main}>
+      <Box component="main" sx={styles.main}>
         {children}
-      </Container>
+      </Box>
       <Footer />
     </Container>
   );

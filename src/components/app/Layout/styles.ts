@@ -11,6 +11,9 @@ export const styles: SxStyles = {
   },
   main: {
     flexGrow: 1,
-    background: theme.palette.custom.lightGrey,
+    bgcolor: theme.palette.custom.lightGrey,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
   },
 };

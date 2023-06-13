@@ -3,17 +3,23 @@ import { SxStyles } from 'types/styles';
 
 export const styles: SxStyles = {
   card: {
-    width: '300px',
-    height: '360px',
+    maxWidth: '300px',
+    width: '100%',
+    height: '420px',
     display: 'flex',
     flexDirection: 'column',
+    transition: 'transform 0.15s ease-in-out',
     '&:hover': {
+      transform: 'scale3d(1.1, 1.05, 1)',
       boxShadow: 2,
+      '& .cardContent': {
+        transform: 'scale3d(0.909, 0.98, 1)',
+      },
     },
   },
   imageWrapper: {
     position: 'relative',
-    height: '120px',
+    height: '160px',
     width: '100%',
   },
   image: {
@@ -34,7 +40,8 @@ export const styles: SxStyles = {
     flexDirection: 'column',
     alignItems: 'flex-start',
     justifyContent: 'space-between',
-    p: 4,
+    transition: 'transform 0.15s ease-in-out',
+    py: 5,
   },
   title: {
     mb: 4,

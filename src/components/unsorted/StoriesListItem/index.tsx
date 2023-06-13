@@ -39,7 +39,7 @@ export const StoriesListItem: FC<StoriesListItemProps> = ({
         />
         {getVideoIcon(contentType)}
       </Box>
-      <Box sx={styles.content}>
+      <Box className="cardContent" sx={styles.content}>
         <Box>
           <Typography variant="h3" sx={styles.title}>
             {title}

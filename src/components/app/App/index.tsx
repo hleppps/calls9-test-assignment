@@ -1,6 +1,8 @@
 import { Box, Container, Link, Typography } from '@mui/material';
 import windowIcon from 'assets/icons/window.png';
+import { StoriesListItem } from 'components/unsorted/StoriesListItem';
 import { FC } from 'react';
+import { dummyStories } from 'utils/dummyStories';
 
 import { Layout } from '../Layout';
 import { styles } from './styles';
@@ -9,7 +11,10 @@ export const App: FC = () => {
   return (
     <Layout>
       <Container maxWidth="laptop" sx={styles.topSection}>
-        <Typography variant='h2' sx={styles.title}>News</Typography>
+        <Typography variant="h2" sx={styles.title}>
+          News
+        </Typography>
+        <StoriesListItem {...dummyStories[0]} />
       </Container>
       <Box sx={styles.bottomSectionWrapper}>
         <Container maxWidth="laptop" sx={styles.bottomSection}>

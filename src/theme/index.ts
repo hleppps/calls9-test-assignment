@@ -60,6 +60,8 @@ export const theme = createTheme(
             backgroundColor: basicTheme.palette.custom.grey,
             color: basicTheme.palette.common.white,
             borderRadius: 0,
+            height: '24px',
+            lineHeight: '16px',
           },
         },
       },
@@ -67,6 +69,19 @@ export const theme = createTheme(
         styleOverrides: {
           root: {
             '&:hover': {
+              cursor: 'pointer',
+            },
+          },
+        },
+      },
+      MuiCard: {
+        styleOverrides: {
+          root: {
+            backgroundColor: 'transparent',
+            borderRadius: '2px',
+            boxShadow: 'none',
+            '&:hover': {
+              backgroundColor: basicTheme.palette.common.white,
               cursor: 'pointer',
             },
           },

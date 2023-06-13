@@ -11,5 +11,18 @@ export const styles: SxStyles = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    p: 0,
+  },
+  menuButton: {
+    display: { tablet: 'none' },
+  },
+  navigation: {
+    display: { mobile: 'none', tablet: 'block' },
+  },
+  navigationDrawerListItem: {
+    textAlign: 'center',
+  },
+  navigationDrawer: {
+    textAlign: 'center',
   },
 };

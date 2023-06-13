@@ -40,6 +40,12 @@ export const basicTheme = createTheme({
     },
   },
   palette: {
+    primary: {
+      main: '#6fbadf',
+    },
+    secondary: {
+      main: '#3c3f43',
+    },
     custom: { grey: '#ACACAC', lightGrey: '##f2f2f2', darkGrey: '#3c3f43' },
   },
 });

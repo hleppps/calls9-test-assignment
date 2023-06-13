@@ -6,6 +6,8 @@ export const styles: SxStyles = {
     display: 'flex',
     flexDirection: 'column',
     gap: '24px',
+    maxWidth: '100%',
+    p: 4,
   },
   title: {
     textAlign: 'center',
@@ -16,14 +18,19 @@ export const styles: SxStyles = {
   },
   formRow: {
     display: 'flex',
+    flexDirection: 'column',
     gap: '16px',
+    fontSize: '16px',
+    [theme.breakpoints.up('tablet')]: {
+      flexDirection: 'row',
+    },
   },
   nameInput: {
-    width: '300px',
+    flexBasis: '50%',
     height: '70px',
   },
   storyInput: {
-    width: '300px',
+    flexBasis: '50%',
   },
   commentTextInput: {
     minHeight: '80px',

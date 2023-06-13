@@ -86,7 +86,7 @@ export const CommentForm: FC<CommentProps> = ({ stories }) => {
           onChange={formik.handleChange}
           error={formik.touched.storyId && Boolean(formik.errors.storyId)}
           options={storySelectOptions}
-          sx={styles.storyInput}
+          formControlSx={styles.storyInput}
         />
       </Box>
       <TextField

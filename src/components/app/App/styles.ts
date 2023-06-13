@@ -7,6 +7,7 @@ export const styles: SxStyles = {
     flexDirection: 'column',
     alignItems: 'center',
     py: 10,
+    flexGrow: 1,
   },
   title: {
     fontSize: '24px',

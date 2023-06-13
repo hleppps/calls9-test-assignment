@@ -1,20 +1,43 @@
 import { Box, Container, Link, Typography } from '@mui/material';
 import windowIcon from 'assets/icons/window.png';
+import { Loader } from 'components/ui/Loader';
 import { StoriesList } from 'components/unsorted/StoriesList';
-import { FC } from 'react';
+import { FC, useEffect, useMemo, useState } from 'react';
+import { Story } from 'types/global';
+import {
+  getTopStories
+} from 'utils/api/storyService';
 import { dummyStories } from 'utils/dummyStories';
 
 import { Layout } from '../Layout';
 import { styles } from './styles';
 
 export const App: FC = () => {
+  const [stories, setStories] = useState<Story[]>(dummyStories);
+  const [loading, setLoading] = useState(true);
+
+  const storiesList = useMemo(
+    () => (loading ? <Loader /> : <StoriesList stories={stories} />),
+    [stories, loading],
+  );
+
+  useEffect(() => {
+    // postComment().then((data) => {
+    //   console.log(data);
+    // });
+    getTopStories().then((fetchedStories) => {
+      setStories(fetchedStories);
+      setLoading(false);
+    });
+  }, []);
+
   return (
     <Layout>
       <Container maxWidth="laptop" sx={styles.topSection}>
         <Typography variant="h2" sx={styles.title}>
           News
         </Typography>
-        <StoriesList stories={dummyStories} />
+        {storiesList}
       </Container>
       <Box sx={styles.bottomSectionWrapper}>
         <Container maxWidth="laptop" sx={styles.bottomSection}>

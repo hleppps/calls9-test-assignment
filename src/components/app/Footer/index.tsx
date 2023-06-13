@@ -1,12 +1,14 @@
-import { Box, Container } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import { FC } from 'react';
 
 import { styles } from './styles';
 
 export const Footer: FC = () => {
   return (
-    <Box sx={styles.footer}>
-      <Container maxWidth="laptop">footer</Container>
-    </Box>
+    <Container maxWidth="laptop" sx={styles.footer}>
+      <Typography variant="caption">
+        Terms & Conditions | Privacy Policy
+      </Typography>
+    </Container>
   );
 };

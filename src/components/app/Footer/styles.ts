@@ -8,5 +8,6 @@ export const styles: SxStyles = {
     justifyContent: 'center',
     py: '48px',
     bgcolor: theme.palette.custom.darkGrey,
+    color: theme.palette.common.white,
   },
 };
